@@ -1,0 +1,79 @@
+.cover{
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.cover_img{
+    width: 100%;
+    height: 100%;
+}
+
+.profile_info{
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.profile_info_img{
+    width: 170px;
+    margin-right: 20px;
+}
+
+.post{
+    margin-left: 15px;
+}
+
+.input_post{
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 16px;
+    padding: 10px;
+    width: 800px;
+    height: 50px;
+}
+
+.posts{
+    margin-top: 50px;
+}
+
+.posts_item{
+    display: flex;
+    flex-direction: column;
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.posts_item div{
+    display: flex;
+}
+
+.posts_item_cont{
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.posts_item:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.posts_item_btn p:not(:last-child){
+    margin-right: 15px;
+}
+
+.posts_item img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.contacts_list{
+    list-style: disc;
+}
+
+.input_status_profile{
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 16px;
+    padding: 10px;
+    font-size: 17px;
+}

@@ -1,0 +1,16 @@
+.pagination{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.pagination_item{
+    cursor: pointer;
+}
+
+.pagination_item:not(:last-child){
+    margin-right: 8px;
+}
+
+.pagination_item_active{
+    font-weight: 600;
+}

@@ -1,0 +1,28 @@
+.nav{
+    grid-area: n;
+    background-color: burlywood;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+    width: 130px;
+    max-height: 250px;
+}
+
+.nav ul {
+    text-align: start;
+    display: inline-block;
+}
+
+.nav li {
+    margin: 10px 0;
+    
+}
+
+.nav a {
+    color: black;
+    padding: 6px;
+}
+
+.nav .active{
+    color: rgb(0, 182, 0);
+}

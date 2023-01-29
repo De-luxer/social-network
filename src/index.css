@@ -1,0 +1,41 @@
+*,*:before,*:after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+button,
+input,
+textarea{
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+textarea{
+    resize: none;
+}
+button{
+    cursor: pointer;
+}
+label{
+    cursor: text;
+}
+p{
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,18 @@
+.app-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-template-areas: "h h" "n c";
+    grid-gap: 10px; 
+}
+
+.app-wrapper-content{
+    grid-area: c;
+}
+
+.app-wrapper-content h4{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
