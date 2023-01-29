@@ -1,11 +1,9 @@
 import React, { Suspense } from 'react';
 import './App.css';
-import { Routes, Route, useLocation, useNavigate, useParams, BrowserRouter, } from 'react-router-dom';
+import { Routes, Route, useLocation, useNavigate, useParams, HashRouter, } from 'react-router-dom';
 import HeaderContainer from './components/Header/HeaderContainer';
 import Nav from './components/Nav/Nav';
 import ProfileContainer from './components/Profile/ProfileContainer';
-//import DialogsContainer from './components/Dialogs/DialogsContainer';
-//import UsersContainer from './components/Users/UsersContainer';
 import Undefined from './components/404/Undefined';
 import Login from './components/Login/Login'
 import { connect, Provider } from 'react-redux';
@@ -14,7 +12,6 @@ import { compose } from 'redux';
 import Preloader from './components/common/Preloader/Preloader';
 import store from './redux/redux-store';
 
-//const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
 const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
 const UsersContainer = React.lazy(() => import('./components/Users/UsersContainer'));
 
@@ -34,6 +31,7 @@ class App extends React.Component {
                     <div className="app-wrapper-content">
                         <Routes>
                             <Route path="/" element={<Undefined />}/>
+                            <Route path="/social-network" element={<Undefined />}/>
                             <Route path="/login" element={<Login />} />
                             <Route path="/profile" element={<ProfileContainer />} >
                                     <Route path=":userId" element={<ProfileContainer />} />
@@ -79,11 +77,11 @@ let AppContainer = compose(
 )(App);
 
 const MainApp = (props) => {
-    return <BrowserRouter>
+    return <HashRouter>
         <Provider store={store}>
             <AppContainer />
         </Provider>
-    </BrowserRouter>
+    </HashRouter>
 }
 
 export default MainApp;
