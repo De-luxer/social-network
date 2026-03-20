@@ -1,0 +1,107 @@
+.users {
+    width: 100%;
+    max-width: initial;
+}
+
+.img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: block;
+}
+
+.container_item{
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 730px;
+    margin-bottom: 25px;
+}
+
+/* .container_item:not(:last-child) {
+    margin-bottom: 25px;
+} */
+
+.user_name_link {
+    display: inline-block;
+    width: max-content;
+    color: #000000;
+    line-height: 1;
+}
+
+.img_container{
+    margin-right: 20px;
+}
+
+/* .btn{
+    padding: 8px;
+    font-size: 16px;
+    color: rgb(0, 182, 0);
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 18px;
+} */
+
+.info{
+    width: 100%;
+}
+
+.info_name_status p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 500px;
+    line-height: 23px;
+}
+
+.user_link {
+    color: #000000;
+}
+
+.resetErrorFilter{
+    font-weight: bold;
+}
+
+.form{
+    margin-bottom: 18px;
+}
+
+.submitButton{
+    margin-right: 10px;
+}
+
+.formTextInput{
+    padding: 4px;
+    border: 1px solid #d1d1d1;
+    margin-right: 10px;
+}
+
+.friends_null h5, .friends_null p{
+    font-size: 18px;
+}
+
+.friends_null a{
+    color: blue;
+}
+
+.enter{
+    opacity: 0;
+}
+
+.enter_active{
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.leave{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.leave_active{
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}

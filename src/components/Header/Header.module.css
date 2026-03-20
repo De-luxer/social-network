@@ -1,0 +1,51 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header_logo{
+    width: 180px;
+    height: auto;
+}
+
+.login_block{
+    float: right;
+}
+
+.login_block a{
+    color: #000000;
+}
+
+.header_container_menu{
+    position: relative;
+    cursor: pointer;
+}
+
+.avatar{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: block;
+}
+
+.header_menu{
+    cursor: default;
+	position: absolute;
+	top: calc(100% + 10px);
+	right: 0;
+	background-color: white;
+	box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.25);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.header_container_menu:hover .header_menu{
+    opacity: 1;
+	visibility: visible;
+}

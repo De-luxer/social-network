@@ -1,0 +1,18 @@
+.preloader_center {
+    display: block;
+    margin: 0 auto 50px auto;
+}
+
+.preloader_wrapper_center {
+    position: fixed;
+    display: grid;
+    inset: 0;
+    place-items: center;
+}
+
+.circle_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

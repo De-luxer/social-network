@@ -1,0 +1,60 @@
+.notifications {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+  
+.notification {
+    position: relative;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    max-width: 700px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    color: white;
+    word-wrap: break-word;     /* Переносит слово на следующую строку */
+    overflow-wrap: break-word; /* Совместимость */
+    white-space: break-spaces;       /* Переносит слова и строки со всеми пробелами */
+}
+
+.notification_error {
+    background: rgba(255, 0, 0, 0.7);
+}
+
+.notification_success {
+    background-color: rgba(128, 255, 0, 0.7);
+}
+
+.notification_info {
+    background-color: rgba(238, 255, 0, 0.7);
+}
+
+.notification p {
+    margin-right: 11px;
+}
+
+.notification_btn{
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+}
+
+.enter {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.enter_active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.leave {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}

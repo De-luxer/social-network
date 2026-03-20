@@ -1,0 +1,26 @@
+::selection {
+    color: white;
+    background: #FFB4EF;
+}
+  
+::-moz-selection {
+    color: white;
+    background: #FFB4EF;
+}
+
+.disabled-scroll {
+  overflow: hidden;
+}
+
+header {
+    height: 50px;
+}
+
+.starting_btn_styles {
+    background-color: #FFB4EF;
+    color: white;
+    font-size: 14px;
+    padding: 10px 14px;
+    border-radius: 30px;
+    line-height: 1;
+}

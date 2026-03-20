@@ -1,0 +1,51 @@
+.dialogs{
+    display: flex;
+}
+
+.avatar_img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.dialogs_item:first-child{
+    border-right: 1px solid black;
+    padding-right: 15px;
+}
+
+.dialogs_item:last-child{
+    padding-left: 15px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid black;
+}
+
+.item:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.user{
+    cursor: pointer;
+}
+
+.actives{
+    background-color: green;
+}
+.actives:hover{
+    background-color: rgba(0, 128, 0, 0.7);
+}
+
+.input_mess{
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 16px;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
